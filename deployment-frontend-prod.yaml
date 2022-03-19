@@ -10,7 +10,7 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
+  name: frontend-prod-service
   namespace: production
 spec:
   ports:
@@ -40,7 +40,7 @@ spec:
         pathType: Prefix
         backend:
           service: 
-            name: frontend-service
+            name: frontend-prod-service
             port: 
               number: 3000
 
